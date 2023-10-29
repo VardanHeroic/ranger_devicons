@@ -263,8 +263,11 @@ dir_node_exact_matches = {
     'Videos'                           : '',
     'anaconda3'                        : '',
     'go'                               : '',
-    'workspace'                        : '',
+    'Works'                            : '',
     'OneDrive'                         : '',
+    'GoogleDrive'                      : '',
+    'Minecraft'                        : '󰍳',
+    'Phone'                            : '󰀲',
 # Spanish
     'Escritorio'                       : '',
     'Documentos'                       : '',
