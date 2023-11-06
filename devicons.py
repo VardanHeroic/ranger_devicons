@@ -29,7 +29,7 @@ xdgs_dirs = {
 # My advice is to use NerdFonts which can be found here:
 # https://github.com/ryanoasis/nerd-fonts
 file_node_extensions = {
-    '7z'       : '',
+    '7z'       : '',
     'a'        : '',
     'ai'       : '',
     'apk'      : '',
@@ -40,7 +40,7 @@ file_node_extensions = {
     'awk'      : '',
     'bash'     : '',
     'bat'      : '',
-    'bmp'      : '',
+    'bmp'      : '󰋩',
     'bz2'      : '',
     'c'        : '',
     'c++'      : '',
@@ -98,12 +98,12 @@ file_node_extensions = {
     'fsi'      : '',
     'fsscript' : '',
     'fsx'      : '',
-    'gem'      : '',
+    'gem'      : '',
     'gemspec'  : '',
-    'gif'      : '',
+    'gif'      : '󰋩',
     'go'       : '',
-    'gz'       : '',
-    'gzip'     : '',
+    'gz'       : '',
+    'gzip'     : '',
     'h'        : '',
     'haml'     : '',
     'hbs'      : '',
@@ -123,8 +123,8 @@ file_node_extensions = {
     'jar'      : '',
     'java'     : '',
     'jl'       : '',
-    'jpeg'     : '',
-    'jpg'      : '',
+    'jpeg'     : '󰋩',
+    'jpg'      : '󰋩',
     'js'       : '',
     'json'     : '',
     'jsx'      : '',
@@ -162,7 +162,7 @@ file_node_extensions = {
     'php'      : '',
     'pl'       : '',
     'pm'       : '',
-    'png'      : '',
+    'png'      : '󰋩',
     'pp'       : '',
     'dps'      : '',
     'dpt'      : '',
@@ -185,7 +185,7 @@ file_node_extensions = {
     'pyo'      : '',
     'r'        : '󰟔',
     'rake'     : '',
-    'rar'      : '',
+    'rar'      : '',
     'rb'       : '',
     'rc'       : '',
     'rlib'     : '',
@@ -209,9 +209,9 @@ file_node_extensions = {
     'suo'      : '',
     'swift'    : '',
     't'        : '',
-    'tar'      : '',
+    'tar'      : '',
     'tex'      : '󰙩',
-    'tgz'      : '',
+    'tgz'      : '',
     'toml'     : '',
     'torrent'  : '',
     'ts'       : '',
@@ -223,7 +223,7 @@ file_node_extensions = {
     'wav'      : '',
     'webm'     : '',
     'webmanifest' : '',
-    'webp'     : '',
+    'webp'     : '󰋩',
     'xbps'     : '',
     'xcplayground' : '',
     'xhtml'    : '',
@@ -240,17 +240,17 @@ file_node_extensions = {
     'xlam'     : '󰈛',
     'xml'      : '',
     'xul'      : '',
-    'xz'       : '',
+    'xz'       : '',
     'yaml'     : '',
     'yml'      : '',
-    'zip'      : '',
+    'zip'      : '',
     'zsh'      : '',
 }
 
 
 dir_node_exact_matches = {
 # English
-    '.git'                             : '',
+    '.git'                             : '',
     'Desktop'                          : '',
     'Documents'                        : '',
     'Downloads'                        : '',
@@ -260,7 +260,7 @@ dir_node_exact_matches = {
     'Pictures'                         : '',
     'Public'                           : '',
     'Templates'                        : '',
-    'Videos'                           : '',
+    'Videos'                           : '',
     'anaconda3'                        : '',
     'go'                               : '',
     'Works'                            : '',
@@ -268,6 +268,7 @@ dir_node_exact_matches = {
     'GoogleDrive'                      : '',
     'Minecraft'                        : '󰍳',
     'Phone'                            : '󰀲',
+    'Scripts'                          : '',
 # Spanish
     'Escritorio'                       : '',
     'Documentos'                       : '',
@@ -354,7 +355,7 @@ file_node_exact_matches = {
     '.dmrc'                            : '',
     '.DS_Store'                        : '',
     '.fasd'                            : '',
-    '.fehbg'                           : '',
+    '.fehbg'                           : '󰋩',
     '.gitattributes'                   : '',
     '.gitconfig'                       : '',
     '.gitignore'                       : '',
@@ -438,6 +439,6 @@ file_node_exact_matches = {
 
 def devicon(file):
     if file.is_directory:
-        return dir_node_exact_matches.get(file.relative_path, '')
+        return dir_node_exact_matches.get(file.relative_path, '')
     return file_node_exact_matches.get(os.path.basename(file.relative_path),
-                                       file_node_extensions.get(file.extension, ''))
+                                       file_node_extensions.get(file.extension, '󰈔'))
