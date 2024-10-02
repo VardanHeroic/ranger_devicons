@@ -269,6 +269,7 @@ dir_node_exact_matches = {
     'Minecraft'                        : '󰍳',
     'Phone'                            : '󰀲',
     'Scripts'                          : '',
+    'Games'                            : '',
 # Spanish
     'Escritorio'                       : '',
     'Documentos'                       : '',
